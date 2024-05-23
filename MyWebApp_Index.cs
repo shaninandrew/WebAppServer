@@ -18,20 +18,33 @@ namespace WebAppServer
 
             response.StatusCode = 200;
             response.ContentType = "text/html";
-            
-            StreamWriter writer = new StreamWriter(response.OutputStream);
-            writer.WriteLine("<html>");
 
+            string title = "Тестовое приложение";
+
+            StreamWriter writer = new StreamWriter(response.OutputStream);
+            writer.WriteLine("<!DOCTYPE html> <html lang=ru>");
             writer.WriteLine("<head>");
             writer.WriteLine("<meta charset=\"utf-8\">");
-            writer.WriteLine("<title>Тестовое</title>");
+            writer.WriteLine("<link rel=\"stylesheet\" href=\"/css/application.css\" type=\"text/css\">");
+            writer.WriteLine($"<title> {title}</title>");
+            writer.WriteLine("<link rel=\"icon\" href = \"/favicon.ico\"/>");
+            writer.WriteLine("<script defer async type=\"text/javascript\" src= \"/lib/boot.js\"></script>");
             writer.WriteLine("</head>");
-
             writer.WriteLine("<body>");
+            writer.WriteLine("<div class=application id=application>");
+            
+            writer.WriteLine("<div class=application_header id=application_header>");
+            writer.WriteLine($"{title}"); 
+            writer.WriteLine("<div class=application_button_section> <button class=application_button onclick=\"collapse_fullscreen();\">❖</button>");
+            writer.WriteLine("<button class=application_button onclick=\"toggle_to_fullscreen();\">⌬</button> </div>");
+            writer.WriteLine("</div>");
+            
+            writer.WriteLine("<div class=application_body id=application_body>");
             writer.WriteLine("Работает!");
+            writer.WriteLine("<button>Test </button>");
+            writer.WriteLine("</div>");
 
             writer.WriteLine("</body>");
-
             writer.WriteLine("</html>");
 
             writer.Close();

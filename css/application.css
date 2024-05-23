@@ -1,0 +1,89 @@
+.application
+{
+	color:white;
+	background: black;
+	font-family: Tahoma ;
+	font-size:12 pt;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	
+}
+
+.application_header {
+	color: black;
+	background: orange;
+	font-family: Tahoma;
+	font-size: 13 pt;
+	font-style: oblique;
+	text-align: center;
+	font-weight: bold;
+	height: 30px;
+	text-align: center;
+	vertical-align: central;
+	align-content: center;
+	border-radius: 5px 5px 0px 0px;
+	
+}
+
+.application_button_section {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	min-width:40px;
+	height:20px;
+	padding 0px;
+	margin: 0px;
+}
+
+
+body 
+{
+	color: White;
+	background: black;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+.application_body 
+{
+	color: White;
+	background: black;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+.application_button {
+	cursor: pointer;
+	color: darkorange;
+	background: black;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	align-content: center;
+	width: 30 px;
+	min-width: 30px;
+	height: 30px;
+	min-height: 30px;
+	border-color: orange;
+}
+
+
+.application_button:hover {
+	color: black;
+	background: yellow;
+	border:0px;
+	border-color: black;
+	padding: 0px 0px 0px 0px;
+}
+
+button {
+	cursor: pointer;
+	min-width: 30px;
+	background: #262626;
+	color:orange;
+	min-height:30px;
+}
+
+button:hover {
+		background: yellow;
+		color: black;
+	}
